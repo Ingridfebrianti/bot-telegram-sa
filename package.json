@@ -1,0 +1,20 @@
+{
+  "name": "bot-telegram-sa",
+  "version": "1.0.0",
+  "description": "Bot Telegram untuk Pencarian Service Area",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "node bot.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "axios": "^1.6.2"
+  },
+  "keywords": ["telegram", "bot", "service-area"],
+  "author": "Your Name",
+  "license": "ISC"
+}
