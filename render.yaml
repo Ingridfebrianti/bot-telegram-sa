@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: bot-telegram-sa
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bot.js
+    healthCheckPath: /
+```
+
+5. **Save** dan tutup
+
+---
+
+### **1.7 Buat File `.gitignore` (kalau belum ada)**
+
+1. Cek apakah file `.gitignore` sudah ada
+2. Jika belum, buat file baru: `.gitignore`
+3. Isi dengan:
+```
+node_modules/
+.env
+*.log
+.DS_Store
+package-lock.json
+.vscode/
+```
+
+4. **Save**
+
+---
+
+### **1.8 Cek Struktur Folder**
+
+Sekarang folder Anda harus punya file-file ini:
+```
+bot-telegram-sa/
+├── .env
+├── .gitignore
+├── bot.js
+├── package.json
+├── render.yaml
+└── node_modules/ (folder)

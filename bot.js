@@ -1,3 +1,4 @@
+require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
@@ -6,10 +7,11 @@ const axios = require('axios');
 // ============================================
 
 // TOKEN dari BotFather - GANTI INI!
-const TELEGRAM_TOKEN = '8366924969:AAEMWmbOTnAg61U2x9YshQyE5vH8FjYpib0';
+// TOKEN dari BotFather - baca dari environment variable
+const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || '8366924969:AAEMWmbOTnAg61U2x9YshQyE5vH8FjYpib0';
 
-// URL dari Apps Script yang sudah di-deploy - GANTI INI!
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7ZrqDd6kjoo-5e3odLoAFLtqlwEs0Ys0RW3rtrbOe8jxs_QTx1q3jmbIB_U8ZDi-_JQ/exec';
+// URL dari Apps Script - baca dari environment variable
+const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbw7ZrqDd6kjoo-5e3odLoAFLtqlwEs0Ys0RW3rtrbOe8jxs_QTx1q3jmbIB_U8ZDi-_JQ/exec';
 
 // ============================================
 // INISIALISASI BOT

@@ -11,10 +11,15 @@
     "node": "18.x"
   },
   "dependencies": {
-    "node-telegram-bot-api": "^0.66.0",
-    "axios": "^1.6.2"
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "node-telegram-bot-api": "^0.63.0"
   },
-  "keywords": ["telegram", "bot", "service-area"],
+  "keywords": [
+    "telegram",
+    "bot",
+    "service-area"
+  ],
   "author": "Your Name",
   "license": "ISC"
 }
